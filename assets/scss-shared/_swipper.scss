@@ -1,0 +1,67 @@
+.popular-itens-controller {
+
+    .swiper-wrapper {
+        padding: 0 0 2em 0;
+    }
+
+    .swiper-button-prev{
+
+        left: auto;
+        right: 22.75%;
+
+        &:after {
+            content: '\e902';
+            font-family: 'icomoon';
+            transform: rotate(90deg);
+            font-size: 1.65em;
+        }
+    }
+
+    .swiper-button-next{
+
+        right: 21%;
+        left: auto;
+
+        &:after{
+            content: "\e902";
+            font-family: 'icomoon';
+            transform: rotate(-90deg);
+            font-size: 1.65em;
+        }
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        color:var(--sixth-color);
+    }
+
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets{
+        bottom: unset;
+        left: unset;
+        right: 17.85%;
+        top: 25%;
+        width: auto;
+    }
+    
+    .swiper-pagination {
+        transform: translate3d(0, 0, 0) rotate(90deg);
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 5px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 13px;
+        height: 13px;
+        display: inline-block;
+        border-radius: 100%;
+        background: var(--sixth-color);
+        opacity: 0.2;
+
+        &.swiper-pagination-bullet-active {
+            opacity: 1;
+            background: var(--sixth-color);
+        }
+    }
+}
+
